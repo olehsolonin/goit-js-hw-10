@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Task-2</title>
+	<link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+	<form class="form box">
+		<label class="label-box">
+			<span class="delay-span">Delay (ms)</span>
+			<input type="number" class="input-field" name="delay" required />
+		</label>
+
+		<fieldset class="fieldset-box">
+			<legend>State</legend>
+			<div class="radio-fieldset">
+				<label class="label-text">
+					<input type="radio" name="state" value="fulfilled" required />
+					Fulfilled
+				</label>
+				<label class="label-text">
+					<input type="radio" name="state" value="rejected" required />
+					Rejected
+				</label>
+			</div>
+		</fieldset>
+
+		<button type="submit" class="notification-btn">Create notification</button>
+	</form>
+
+	<section>
+		<a class="back-link fix-link" href="./index.html">Return to the main page</a>
+
+	</section>
+	<script type="module" src="./js/2-snackbar.js" async></script>
+</body>
+
+</html>
